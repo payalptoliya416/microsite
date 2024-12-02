@@ -35,6 +35,7 @@ const otherReasonSectiona = document.getElementById('btm-other');
     } else {
       otherReasonSection.classList.add('hidden');
     }
+    
 if (label === "others") {
   otherReasonSectiona.classList.remove('hidden');
 } else {
