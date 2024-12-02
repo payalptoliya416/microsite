@@ -1,0 +1,7 @@
+
+   @font-face {
+    font-family: "Gotham";
+    src: url('../public/fonts/Gotham-Book.otf') format('opentype');
+    src: url('../public/fonts/Gotham-Medium.otf') format('opentype');
+    src: url('../public/fonts/GothamBold.otf') format('opentype');
+  }

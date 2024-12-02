@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./fonts.css">
+  <link rel="stylesheet" href="./custom-file.css">
+  <link href="./output.css" rel="stylesheet">
+
+</head>
+<body style="font-family: 'Gotham'">
+  <div class="main max-h-screen overflow-y-auto m-auto z-[1] relative border border-solid max-w-[768px]  mx-auto  bg-[url('/public/bg.png')] bg-cover bg-no-repeat h-screen w-screen">
+      <div class="px-container-padding max-w-container mx-auto">
+        <div class="text-center pt-20">
+          <img src="../public/logo.png" alt="logo" class="w-full max-w-[250px] xss:max-w-[300px] md:max-w-[400px] mx-auto mb-8">
+          <p class="text-[#0448ae] text-xl leading-[24px] mb-[30px] text-center font-semibold">Dear colleagues, <br/>
+            you're invited to the <br/>
+            NETS Kickoff Townhall 2025.</p>
+            <p class="text-[#0448ae] text-xl leading-[24px] mb-[30px] text-center font-semibold w-full max-w-[300px] xs:max-w-[400px] mx-auto">Join us for an afternoon of
+              interactive sessions and
+              learn more about what's
+              upcoming for NETS.</p>
+        </div>
+          <form class="">
+            <div class="bg-[#0046ad] p-[24px] xxs:p-[40px] rounded-lg mb-[30px]">
+              <div class="mb-6">
+                <h3 class="text-white text-base xs:text-lg leading-5 text-center font-semibold ">Kindly register by filling in
+                  your details below.</h3>
+              </div>
+              <div class="mb-6">
+                <label class="text-white text-base xs:text-lg leading-5 text-center font-semibold mb-4">Name<span class="text-[#da043a] ms-[2px]">*</span></label>
+                <input type="text" class="bg-white rounded-md w-full h-full py-2 focus:outline-none px-1">
+              </div>
+              <div class="mb-6">
+                <label class="text-white text-base xs:text-lg leading-5 text-center font-semibold mb-4">Entity <span class="text-[#da043a] ms-[2px]">*</span></label>
+                <select id="main_select_services" class="select-club-services bg-white rounded-md w-full h-full py-2 focus:outline-none px-1 " >
+                  <option value="" selected>Choose</option>
+                  <option value="">NETS</option>
+                  <option value="">NETS Solution</option>
+                  <option value="">BCS</option>
+                </select>
+              </div>
+              <div class="mb-6">
+                <label class="text-white text-base xs:text-lg leading-5 text-center font-semibold mb-4">Work Email<span class="text-[#da043a] ms-[2px]">*</span></label>
+                <input type="email" class="bg-white rounded-md w-full h-full py-2 focus:outline-none px-1">
+              </div>
+              <div class="mb-6">
+                <label class="text-white text-base xs:text-lg leading-5 text-center font-semibold mb-4">Personal Email<span class="text-[#da043a] ms-[2px]">*</span></label>
+                <input type="email" class="bg-white rounded-md w-full h-full py-2 focus:outline-none px-1">
+              </div>
+              <div class="mb-6">
+                <label class="text-white text-base xs:text-lg leading-5 text-center font-semibold mb-4">Department<span class="text-[#da043a] ms-[2px]">*</span></label>
+                <select id="main_select_services" class="select-club-services bg-white rounded-md w-full h-full py-2 focus:outline-none px-1 ">
+                  <option value="" selected>Choose</option>
+                  <option value="">(NETS) Merchant Business</option>
+                  <option value="">(NETS) Consumer Business &</option>
+                  <option value="">Business Development</option>
+                  <option value="">(NETS) Corporate Service & Strategic Marketing & Corpotate Communication</option>
+                  <option value=""></option>
+                </select>
+              </div>
+              <div class="mb-6">
+                <p class="text-white text-base xs:text-lg leading-5 text-center font-semibold ">Will you be attending the
+                  NETS Kickoff Townhall 2025?</p>
+              </div>
+    
+              <div class="mb-6">
+                <div class="flex items-center mb-4">
+                  <input 
+                    id="yes-checkbox" 
+                    type="checkbox" 
+                    value="yes" 
+                    class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-50">
+                  <label for="yes-checkbox" class="text-white text-lg leading-5 font-semibold ms-3">
+                    Yes, I will be attending
+                  </label>
+                </div>
+                <div class="flex items-center mb-4">
+                  <input 
+                    id="no-checkbox" 
+                    type="checkbox" 
+                    value="no" 
+                    class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-50">
+                  <label for="no-checkbox" class="text-white text-lg leading-5 font-semibold ms-3">
+                    No, I will not be attending
+                  </label>
+                </div>
+              </div>
+              
+              <div id="reason-section" class="mb-6 hidden">
+                <label class="text-white text-base xs:text-lg leading-5 text-center font-semibold mb-4">
+                  If No is selected, please indicate reason why 
+                </label>
+                <select 
+                  id="reason-select" 
+                  class="select-club-services bg-white rounded-md w-full h-full py-2 focus:outline-none px-1" 
+                  >
+                  <option value="" selected>Choose</option>
+                  <option value="leave">I will be on leave</option>
+                  <option value="work">I am excused due to work exigencies</option>
+                  <option value="others" >Others</option>
+                </select>
+              </div>
+              
+              <div id="other-reason-section" class="mb-6 hidden">
+                <input 
+                  type="text" 
+                  placeholder="Please Indicate" 
+                  class="border-b text-white font-light text-xl bg-transparent w-full placeholder:text-white">
+              </div>
+             
+              <div class="mb-6">
+                <label class="text-white text-base xs:text-lg leading-5 text-center font-semibold mb-4">Do you have any dietary
+                  restrictions?</label>
+                <select id="main_select_services" class="select-services select-club-services bg-white rounded-md w-full h-full py-2 focus:outline-none px-1 " >
+                  <option value="">Choose</option>
+                  <option value="Vegetarian">Vegetarian</option>
+                  <option value="others" class="capitalize">others</option>
+                </select>
+              </div>
+              <div class="mb-6 hidden " id="btm-other" class="mb-6 hidden">
+                <input type="text" placeholder="PLease Indicate" class="border-b text-white font-light text-xl bg-transparent w-full placeholder:text-white ">
+              </div>
+
+              
+            </div>
+            <div class="mb-6 text-center">
+              <a href="thankYou.html" class="rounded-3xl text-white text-lg leading-[20px] bg-[#e70033] px-[50px] font-semibold py-[16px] ">Submit</a>
+          </form>
+      </div>
+  </div>
+
+  <script>
+    const otherReasonSection = document.getElementById('other-reason-section');
+
+document.querySelector('a.others').addEventListener('click', function(event) {
+
+  event.preventDefault();
+  
+  if (this.classList.contains('others') && this.classList.contains('active')) {
+    otherReasonSection.classList.remove('hidden');
+  } else {
+    otherReasonSection.classList.add('hidden');
+  }
+});
+  </script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <script src="./main.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const yesCheckbox = document.getElementById('yes-checkbox');
+    const noCheckbox = document.getElementById('no-checkbox');
+    const reasonSection = document.getElementById('reason-section');
+    const reasonSelect = document.getElementById('reason-select');
+    const otherReasonSection = document.getElementById('other-reason-section');
+
+    yesCheckbox.addEventListener('change', () => {
+      if (yesCheckbox.checked) {
+        noCheckbox.checked = false;
+        reasonSection.classList.add('hidden');
+        otherReasonSection.classList.add('hidden');
+      }
+    });
+
+    noCheckbox.addEventListener('change', () => {
+      if (noCheckbox.checked) {
+        yesCheckbox.checked = false;
+        reasonSection.classList.remove('hidden');
+        reasonSelect.value = ""; 
+        otherReasonSection.classList.add('hidden');
+      }
+    });
+  });
+</script>
+
+ 
+</body>
+</html>
