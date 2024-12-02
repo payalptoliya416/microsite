@@ -26,19 +26,7 @@ e.preventDefault();
 var dropdown = $(this).parent().parent().parent();
 var active = $(this).parent().hasClass('active');
 var label = active ? dropdown.find('select').attr('placeholder') : $(this).text();
-const otherReasonSection = document.getElementById('other-reason-section');
-const otherReasonSectiona = document.getElementById('btm-other');
-//     if (label === "Others") {
-//       otherReasonSection.classList.remove('hidden');
-//     } else {
-//       otherReasonSection.classList.add('hidden');
-//     }
-    
-// if (label === "others") {
-//   otherReasonSectiona.classList.remove('hidden');
-// } else {
-//   otherReasonSectiona.classList.add('hidden');
-// }
+
 if (dropdown.find('select').attr('id') === 'reason-select') {
   const otherReasonSection = document.getElementById('other-reason-section');
   if (label === "Others") {
