@@ -106,7 +106,7 @@
                 <input 
                   type="text" 
                   placeholder="Please Indicate" 
-                  class="border-b text-white font-light text-xl bg-transparent w-full placeholder:text-white">
+                  class="focus:outline-none border-b text-white font-light text-xl bg-transparent w-full placeholder:text-white">
               </div>
              
               <div class="mb-6">
@@ -119,7 +119,7 @@
                 </select>
               </div>
               <div class="mb-6 hidden " id="btm-other" class="mb-6 hidden">
-                <input type="text" placeholder="PLease Indicate" class="border-b text-white font-light text-xl bg-transparent w-full placeholder:text-white ">
+                <input type="text" placeholder="PLease Indicate" class="focus:outline-none border-b text-white font-light text-xl bg-transparent w-full placeholder:text-white ">
               </div>
 
               
@@ -158,7 +158,7 @@ document.querySelector('a.others').addEventListener('click', function(event) {
       if (yesCheckbox.checked) {
         noCheckbox.checked = false;
         reasonSection.classList.add('hidden');
-        otherReasonSection.classList.add('hidden');
+        // otherReasonSection.classList.add('hidden');
       }
     });
 
@@ -166,13 +166,14 @@ document.querySelector('a.others').addEventListener('click', function(event) {
       if (noCheckbox.checked) {
         yesCheckbox.checked = false;
         reasonSection.classList.remove('hidden');
-        reasonSelect.value = ""; 
-        otherReasonSection.classList.add('hidden');
+        // reasonSelect.value = ""; 
+        // otherReasonSection.classList.add('hidden');
       }else{
         reasonSection.classList.add('hidden');
       }
     });
   });
+
 </script>
 
  
