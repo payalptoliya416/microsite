@@ -19,7 +19,6 @@ label.text($(this).find('option:selected').text());
 list.find('li:contains(' + $(this).find('option:selected').text() + ')').addClass('active');
 $(this).parent().addClass('filled');
 }
-
 });
 
 $(document).on('click touch', '.selectDropdown ul li a', function(e) {
@@ -29,17 +28,34 @@ var active = $(this).parent().hasClass('active');
 var label = active ? dropdown.find('select').attr('placeholder') : $(this).text();
 const otherReasonSection = document.getElementById('other-reason-section');
 const otherReasonSectiona = document.getElementById('btm-other');
-
-    if (label === "Others") {
-      otherReasonSection.classList.remove('hidden');
-    } else {
-      otherReasonSection.classList.add('hidden');
-    }
+//     if (label === "Others") {
+//       otherReasonSection.classList.remove('hidden');
+//     } else {
+//       otherReasonSection.classList.add('hidden');
+//     }
     
-if (label === "others") {
-  otherReasonSectiona.classList.remove('hidden');
-} else {
-  otherReasonSectiona.classList.add('hidden');
+// if (label === "others") {
+//   otherReasonSectiona.classList.remove('hidden');
+// } else {
+//   otherReasonSectiona.classList.add('hidden');
+// }
+if (dropdown.find('select').attr('id') === 'reason-select') {
+  const otherReasonSection = document.getElementById('other-reason-section');
+  if (label === "Others") {
+    otherReasonSection.classList.remove('hidden');
+  } else {
+    otherReasonSection.classList.add('hidden');
+  }
+}
+
+// Handle the second dropdown for 'btm-other'
+if (dropdown.find('select').attr('id') === 'main_select_services') {
+  const otherReasonSectiona = document.getElementById('btm-other');
+  if (label === "others") {
+    otherReasonSectiona.classList.remove('hidden');
+  } else {
+    otherReasonSectiona.classList.add('hidden');
+  }
 }
 
 dropdown.find('option').prop('selected', false);

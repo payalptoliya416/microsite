@@ -15,6 +15,10 @@
 	width: 220px;
 	position: relative;
 }
+.hidden {
+	display: none;
+  }
+  
 .select-club-services select {
 	display: none;
 }
